@@ -9,6 +9,7 @@ The goal of genome assembly is described as producing complete, accurate sequenc
 **In order to achieve the objective of this project, the following workflow is required:**
 
 **QC \-\> Assembly \-\> Polishing \-\> comparison to reference genome \-\> visualization.**  
+
 There are a number of assembly tools that are used in literature. Benchmarks on prokaryotic long-read data consistently find that there are several top performing tools across different metrics, such as Flye (Kolmogorov et al., 2019). However, no single assembler performs perfectly on every metric (Wick & Holt, 2021). A potential solution would be to use consensus genome assembler tools, the most advanced being Autocycler (Wick et al., 2025\) that combine multiple input assemblies to produce a high-quality consensus. 
 
 Post assembly, polishing corrects residual base-level mistakes by re-aligning reads to the draft assembly and refining the consensus. Comparative evaluations of microbial polishing strategies highlight that polishing is a critical step (Lee et al., 2021), once more with multiple tools offering varying results. Medaka is a commonly used tool used on long-reads that performs better than its competitors (Wick et al., 2023, Lee et al., 2021\) and is directly compatible with Flye, according to its developers (*Nanoporetech/Medaka*, 2021). 
@@ -67,11 +68,18 @@ Visualization:
 # **References**
 
 Kolmogorov, M., Yuan, J., Lin, Y., & Pevzner, P. A. (2019). Assembly of long, error-prone reads using repeat graphs. *Nature Biotechnology*, *37*(5), 540–546. https://doi.org/10.1038/s41587-019-0072-8  
+
 Koren, S., & Phillippy, A. M. (2015). One chromosome, one contig: complete microbial genomes from long-read sequencing and assembly. *Current Opinion in Microbiology*, *23*, 110–120. https://doi.org/10.1016/j.mib.2014.11.014  
+
 Lee, J. Y., Kong, M., Oh, J., Lim, J., Chung, S. H., Kim, J.-M., Kim, J.-S., Kim, K.-H., Yoo, J.-C., & Kwak, W. (2021). Comparative evaluation of Nanopore polishing tools for microbial genome assembly and polishing strategies for downstream analysis. *Scientific Reports*, *11*(1). https://doi.org/10.1038/s41598-021-00178-w  
+
 Li, H. (2018). Minimap2: pairwise alignment for nucleotide sequences. *Bioinformatics*, *34*(18), 3094–3100. https://doi.org/10.1093/bioinformatics/bty191  
 *nanoporetech/medaka*. (2021, April 15). GitHub. https://github.com/nanoporetech/medaka  
+
 Thorvaldsdottir, H., Robinson, J. T., & Mesirov, J. P. (2012). Integrative Genomics Viewer (IGV): high-performance genomics data visualization and exploration. *Briefings in Bioinformatics*, *14*(2), 178–192. https://doi.org/10.1093/bib/bbs017  
+
 Wick, R. R., & Holt, K. E. (2021). Benchmarking of long-read assemblers for prokaryote whole genome sequencing. *F1000Research*, *8*, 2138\. https://doi.org/10.12688/f1000research.21782.4  
+
 Wick, R. R., Howden, B. P., & Stinear, T. P. (2025). Autocycler: long-read consensus assembly for bacterial genomes. *Bioinformatics*, *41*(9). https://doi.org/10.1101/2025.05.12.653612  
+
 Wick, R. R., Judd, L. M., & Holt, K. E. (2023). Assembling the perfect bacterial genome using Oxford Nanopore and Illumina sequencing. *PLOS Computational Biology*, *19*(3), e1010905. https://doi.org/10.1371/journal.pcbi.1010905
